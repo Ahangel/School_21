@@ -7,7 +7,7 @@
 	{
 		$_SESSION['login'] = $_GET['login'];
 		$_SESSION['passwd'] = $_GET['passwd'];
-		if (auth($_SESSION['login'], $_SESSION['passwd']) == TRUE)
+		if (auth($_SESSION['login'], $_SESSION['passwd']) == true)
 			echo "OK\n";
 		else
 			echo "ERROR\n";
